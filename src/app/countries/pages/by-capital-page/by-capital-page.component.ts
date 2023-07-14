@@ -8,9 +8,6 @@ import { Component, ViewChild } from '@angular/core';
 })
 export class ByCapitalPageComponent {
 
-  // @ViewChild('TxtSearchInput')
-  // txtSearch!:ElementRef<HTMLInputElement>;
-
   searchByCapital(term:string):void{
     console.log('Buscando por Capital')
     console.log(term);

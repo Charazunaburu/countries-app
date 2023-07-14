@@ -8,11 +8,18 @@ import { Component, ElementRef, EventEmitter, Input, Output, ViewChild } from '@
 })
 export class SearchBoxComponent {
 
+  @ViewChild('TxtSearchInput')
+  txtSearchInput!:ElementRef<HTMLInputElement>;
+
   @Output()
   onValue:EventEmitter<string> = new EventEmitter()
 
   @Input()
   public placeHolder:string = '';
+
+  getSearchValue(){
+    this.onValue.emit(this.txtSearchInput.nativeElement.value);
+  }
 
 
 }
