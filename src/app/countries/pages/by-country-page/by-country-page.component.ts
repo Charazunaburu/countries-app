@@ -8,4 +8,8 @@ import { Component } from '@angular/core';
 })
 export class ByCountryPageComponent {
 
+  searchByCountry(country:string):void{
+    console.log(country);
+    console.log('Buscando por pais');
+  }
 }

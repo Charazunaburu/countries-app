@@ -8,4 +8,8 @@ import { Component } from '@angular/core';
 })
 export class ByRegionPageComponent {
 
+  searchByRegion(region:string):void{
+    console.log(region);
+    console.log('Buscando por region');
+  }
 }
